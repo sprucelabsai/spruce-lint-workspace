@@ -88,7 +88,7 @@ jobs:
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-      - run: npm run publish -- --yes --force-publish --npm-tag beta --message "%s [skip ci]"
+      - run: npm run publish -- --yes --force-publish --message "%s [skip ci]"
 workflows:
   version: 2
   do_build:
