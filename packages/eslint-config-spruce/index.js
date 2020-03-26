@@ -90,12 +90,11 @@ module.exports = {
 		}
 	],
 	extends: [
-		'plugin:flowtype/recommended',
 		'plugin:react/recommended',
 		'eslint:recommended',
 		'prettier'
 	],
-	plugins: ['spruce', 'import', 'react', 'flowtype', 'prettier'],
+	plugins: ['spruce', 'import', 'react', 'prettier'],
 	rules: {
 		...defaultFormattingRules
 	},
