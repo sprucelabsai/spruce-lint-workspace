@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "path": "packages/eslint-config-spruce",
+      "name": "Spruce ESLint Config"
+    },
+    {
+      "path": "packages/eslint-plugin-spruce",
+      "name": "Spruce ESLint Plugin"
+    }
+  ]
+}
