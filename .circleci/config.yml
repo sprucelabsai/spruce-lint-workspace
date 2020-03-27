@@ -2,7 +2,7 @@ version: 2
 jobs:
   test:
     docker:
-      - image: circleci/python:3.7.3-node
+      - image: circleci/node:12
     steps:
       - add_ssh_keys:
           fingerprints:
@@ -23,14 +23,12 @@ jobs:
             - ~/.cache/yarn
   pre_release:
     docker:
-      - image: circleci/python:3.7.3-node
+      - image: circleci/node:12
     steps:
       - add_ssh_keys:
           fingerprints:
             - "ec:9f:2e:aa:1f:c9:ab:49:57:8f:c0:cd:2e:5b:f3:b0"
-      - run: pip install awscli --upgrade --user
-      - run: echo 'export PATH=$HOME/.local/bin:$PATH' >> $BASH_ENV
-      - run: node -v && npm -v && aws --version
+      - run: node -v && npm -v
       - checkout
       - restore_cache:
           keys:
@@ -43,17 +41,15 @@ jobs:
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-      - run: export SHA=$(git rev-parse --short HEAD) && npm run publish -- prerelease --exact --yes --preid pre-$SHA --message "%s [skip ci]" --no-push --npm-tag prerelease
+      - run: export SHA=$(git rev-parse --short HEAD) && npm run publish -- prerelease --exact --yes --preid pre-$SHA --no-push --npm-tag prerelease
   canary:
     docker:
-      - image: circleci/python:3.7.3-node
+      - image: circleci/node:12
     steps:
       - add_ssh_keys:
           fingerprints:
             - "ec:9f:2e:aa:1f:c9:ab:49:57:8f:c0:cd:2e:5b:f3:b0"
-      - run: pip install awscli --upgrade --user
-      - run: echo 'export PATH=$HOME/.local/bin:$PATH' >> $BASH_ENV
-      - run: node -v && npm -v && aws --version
+      - run: node -v && npm -v
       - checkout
       - restore_cache:
           keys:
@@ -66,17 +62,15 @@ jobs:
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-      - run: npm run publish -- --exact --yes --canary --preid canary --force-publish --npm-tag canary --message "%s [skip ci]" --no-push --no-git-reset --includeMergedTags
+      - run: npm run publish -- --exact --yes --canary --preid canary --force-publish --npm-tag canary --no-push --no-git-reset --includeMergedTags
   dev_release:
     docker:
-      - image: circleci/python:3.7.3-node
+      - image: circleci/node:12
     steps:
       - add_ssh_keys:
           fingerprints:
             - "ec:9f:2e:aa:1f:c9:ab:49:57:8f:c0:cd:2e:5b:f3:b0"
-      - run: pip install awscli --upgrade --user
-      - run: echo 'export PATH=$HOME/.local/bin:$PATH' >> $BASH_ENV
-      - run: node -v && npm -v && aws --version
+      - run: node -v && npm -v
       - checkout
       - run:
           command: |
@@ -95,17 +89,15 @@ jobs:
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-      - run: npm run publish -- --yes --force-publish --dist-tag beta --message "%s [skip ci]" --conventional-graduate
+      - run: 'npm run publish -- --yes --force-publish --dist-tag beta --message "chore(release): %v [skip-ci-version]" --conventional-graduate'
   prod_release:
     docker:
-      - image: circleci/python:3.7.3-node
+      - image: circleci/node:12
     steps:
       - add_ssh_keys:
           fingerprints:
             - "ec:9f:2e:aa:1f:c9:ab:49:57:8f:c0:cd:2e:5b:f3:b0"
-      - run: pip install awscli --upgrade --user
-      - run: echo 'export PATH=$HOME/.local/bin:$PATH' >> $BASH_ENV
-      - run: node -v && npm -v && aws --version
+      - run: node -v && npm -v
       - checkout
       - restore_cache:
           keys:
@@ -128,7 +120,6 @@ workflows:
             branches:
               ignore:
                 - master
-                - canary
       - pre_release:
           context: public_package_publish
           requires:
