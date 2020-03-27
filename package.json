@@ -7,8 +7,8 @@
 		"packages/eslint-config-spruce"
 	],
 	"engines": {
-		"node": "^10",
-		"npm": "^6"
+		"node": ">=10",
+		"npm": ">=6"
 	},
 	"scripts": {
 		"lint": "lerna run lint",
