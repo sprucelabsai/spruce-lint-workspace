@@ -78,6 +78,13 @@ jobs:
       - run: echo 'export PATH=$HOME/.local/bin:$PATH' >> $BASH_ENV
       - run: node -v && npm -v && aws --version
       - checkout
+      - run:
+          command: |
+            COMMIT_MSG=$(git log --format=oneline -n 1 $CIRCLE_SHA1)
+            if [[ $COMMIT_MSG == *"[skip-ci-version]"* ]]; then
+              echo "[skip-ci-version] detected. Stopping."
+              circleci step halt
+            fi
       - restore_cache:
           keys:
             - yarn-packages-{{ checksum "yarn.lock" }}

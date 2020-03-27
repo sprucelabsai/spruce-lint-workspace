@@ -8,8 +8,9 @@
 			"allowBranch": [
 				"dev",
 				"canary",
-				"prerelease/*"
+				"prerelease-*"
 			],
+			"message": "chore(release): %v [skip-ci-version]",
 			"conventionalCommits": true,
 			"changelogPreset": "sprucelabs"
 		}
