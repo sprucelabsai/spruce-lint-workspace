@@ -21,7 +21,15 @@ const defaultFormattingRules = {
 			useTabs: true,
 			semi: false
 		}
-	]
+	],
+	"capitalized-comments": [
+        "error",
+        "always",
+        {
+            "ignoreInlineComments": true,
+            "ignoreConsecutiveComments": true
+        }
+    ]
 }
 
 module.exports = {
