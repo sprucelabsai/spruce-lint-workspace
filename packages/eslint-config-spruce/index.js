@@ -26,7 +26,8 @@ const defaultFormattingRules = {
         "error",
         "always",
         {
-            "ignoreInlineComments": true
+            "ignoreInlineComments": true,
+            "ignoreConsecutiveComments": true
         }
     ]
 }
