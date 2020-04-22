@@ -11,7 +11,8 @@ const defaultFormattingRules = {
 	'no-undef': 'error',
 	'no-var': 'error',
 	'no-unreachable': 'error',
-	'no-unused-vars': 'error',
+	'no-unused-vars': ['error', {'argsIgnorePattern': '^_'}],
+	'@typescript-eslint/no-unused-vars': ['error', {'argsIgnorePattern': '^_'}],
 	'object-shorthand': ['error', 'always'],
 	'react/prop-types': 'off',
 	'prettier/prettier': [
@@ -23,13 +24,18 @@ const defaultFormattingRules = {
 		}
 	],
 	"capitalized-comments": [
-        "error",
-        "always",
-        {
-            "ignoreInlineComments": true,
-            "ignoreConsecutiveComments": true
-        }
-    ]
+		"error",
+		"always",
+		{
+			"line": {
+				"ignorePattern": ".*",
+			},
+			"block": {
+				"ignoreInlineComments": true,
+				"ignoreConsecutiveComments": true
+			}
+		}
+	]
 }
 
 module.exports = {
