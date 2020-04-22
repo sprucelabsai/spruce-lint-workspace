@@ -24,18 +24,18 @@ const defaultFormattingRules = {
 		}
 	],
 	"capitalized-comments": [
-        "error",
-        "always",
-        {
+		"error",
+		"always",
+		{
 			"line": {
-                "ignorePattern": ".*",
-            },
-            "block": {
-                "ignoreInlineComments": true,
-            	"ignoreConsecutiveComments": true
-            }
-        }
-    ]
+				"ignorePattern": ".*",
+			},
+			"block": {
+				"ignoreInlineComments": true,
+				"ignoreConsecutiveComments": true
+			}
+		}
+	]
 }
 
 module.exports = {
