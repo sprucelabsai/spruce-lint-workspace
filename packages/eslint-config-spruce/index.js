@@ -35,7 +35,8 @@ const defaultFormattingRules = {
 				"ignoreConsecutiveComments": true
 			}
 		}
-	]
+	],
+	'import/order': ['error']
 }
 
 module.exports = {
