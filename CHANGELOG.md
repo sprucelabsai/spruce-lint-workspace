@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.3.0](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.2.0...v10.3.0) (2020-05-11)
+
+
+### Features
+
+* set import order rules ([08d917e](https://github.com/sprucelabsai/spruce-lint-workspace/commit/08d917e))
+
+
+
+
+
 # [10.2.0](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.1.0...v10.2.0) (2020-04-22)
 
 
