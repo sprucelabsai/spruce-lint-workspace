@@ -35,7 +35,28 @@ const defaultFormattingRules = {
 				"ignoreConsecutiveComments": true
 			}
 		}
-	]
+	],
+	'import/order': ['error', {
+		"alphabetize": {
+			"order": "asc",
+			"caseInsensitive": true
+		},
+		"newlines-between": "never",
+		"groups": [ "builtin", "external", "internal", "parent", "index", "sibling", "unknown" ],
+		"pathGroups": [
+			{
+			  "pattern": "@sprucelabs/**",
+			  "group": "external",
+			  "position": "before"
+			},
+			{
+			  "pattern": "#spruce/**",
+			  "group": "internal",
+			  "position": "before"
+			}
+		],
+		"pathGroupsExcludedImportTypes": ["builtin"]
+	}]
 }
 
 module.exports = {
