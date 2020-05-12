@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.4.0](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/compare/v10.3.0...v10.4.0) (2020-05-12)
+
+
+### Features
+
+* auto-fix pascal case enum; new rule: prefer #spruce/ imports ([573fa76](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/commit/573fa76))
+
+
+
+
+
 # [10.3.0](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/compare/v10.2.0...v10.3.0) (2020-05-11)
 
 
