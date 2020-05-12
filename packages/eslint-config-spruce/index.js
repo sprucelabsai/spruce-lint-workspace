@@ -6,6 +6,7 @@ const defaultFormattingRules = {
 	curly: 'error',
 	'spruce/utils-graphql': 'error',
 	'spruce/prefer-pascal-case-enums': 'error',
+	'spruce/prefer-spruce-hash-import': 'error',
 	'react/jsx-no-undef': 'error',
 	'no-console': 'off',
 	'no-undef': 'error',

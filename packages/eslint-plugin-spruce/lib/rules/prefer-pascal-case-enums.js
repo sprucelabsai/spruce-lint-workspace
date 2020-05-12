@@ -8,7 +8,7 @@ module.exports = {
 			category: 'Stylistic Issues',
 			recommended: false
 		},
-		fixable: null
+		fixable: 'code'
 	},
 	create(context) {
 		function report(node) {
@@ -17,7 +17,10 @@ module.exports = {
 			context.report({
 				node,
 				message: `Enum '{{name}}' should use Pascal case.`,
-				data: { name }
+				data: { name },
+				fix: function(fixer) {
+					return fixer.replaceText(node, pascalCase(name));
+				}
 			})
 		}
 
