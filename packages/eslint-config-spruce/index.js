@@ -46,18 +46,24 @@ const defaultFormattingRules = {
 		"groups": [ "builtin", "external", "internal", "parent", "index", "sibling", "unknown" ],
 		"pathGroups": [
 			{
-			  "pattern": "@sprucelabs/**",
-			  "group": "external",
-			  "position": "before"
+				"pattern": "@sprucelabs/**",
+				"group": "external",
+				"position": "before"
 			},
 			{
-			  "pattern": "#spruce/**",
-			  "group": "internal",
-			  "position": "before"
+				"pattern": "#spruce/**",
+				"group": "internal",
+				"position": "before"
 			}
 		],
 		"pathGroupsExcludedImportTypes": ["builtin"]
-	}]
+	}],
+	"prefer-arrow/prefer-arrow-functions": [
+		"warn",
+		{
+			"classPropertiesAllowed": true
+		}
+	]
 }
 
 module.exports = {
@@ -130,7 +136,7 @@ module.exports = {
 		'eslint:recommended',
 		'prettier'
 	],
-	plugins: ['spruce', 'import', 'react', 'prettier'],
+	plugins: ['spruce', 'import', 'react', 'prettier', 'prefer-arrow-functions'],
 	rules: {
 		...defaultFormattingRules
 	},
