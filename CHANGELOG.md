@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.5.0](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.4.0...v10.5.0) (2020-06-18)
+
+
+### Features
+
+* add prefer-arrow-functions ([27c21a6](https://github.com/sprucelabsai/spruce-lint-workspace/commit/27c21a6))
+
+
+
+
+
 # [10.4.0](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.3.0...v10.4.0) (2020-05-12)
 
 
