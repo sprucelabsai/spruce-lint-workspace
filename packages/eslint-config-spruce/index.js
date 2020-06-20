@@ -58,7 +58,7 @@ const defaultFormattingRules = {
 		],
 		"pathGroupsExcludedImportTypes": ["builtin"]
 	}],
-	"prefer-arrow/prefer-arrow-functions": [
+	"prefer-arrow-functions/prefer-arrow-functions": [
 		"warn",
 		{
 			"classPropertiesAllowed": true
