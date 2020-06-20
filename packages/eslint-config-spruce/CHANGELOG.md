@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.5.1](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/compare/v10.5.0...v10.5.1) (2020-06-20)
+
+
+### Bug Fixes
+
+* use the right package for arrow ([7cc087f](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/commit/7cc087f))
+
+
+
+
+
 # [10.5.0](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/compare/v10.4.0...v10.5.0) (2020-06-18)
 
 
