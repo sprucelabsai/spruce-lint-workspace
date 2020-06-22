@@ -62,6 +62,7 @@ const defaultFormattingRules = {
 		"order": [
 			"[properties]",
 			"constructor",
+			"[arrow-function-properties]",
 			"[methods]"
 		],
 		"accessorPairPositioning": "getThenSet",
