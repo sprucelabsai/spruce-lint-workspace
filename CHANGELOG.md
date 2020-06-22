@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.5.3](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.5.2...v10.5.3) (2020-06-22)
+
+
+### Bug Fixes
+
+* remove prefer arrow functions ([2cbaccb](https://github.com/sprucelabsai/spruce-lint-workspace/commit/2cbaccb))
+
+
+
+
+
 ## [10.5.2](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.5.1...v10.5.2) (2020-06-22)
 
 
