@@ -58,12 +58,6 @@ const defaultFormattingRules = {
 		],
 		"pathGroupsExcludedImportTypes": ["builtin"]
 	}],
-	"prefer-arrow-functions/prefer-arrow-functions": [
-		"warn",
-		{
-			"classPropertiesAllowed": true
-		}
-	],
 	"sort-class-members/sort-class-members": [2, {
 		"order": [
 			"[properties]",
@@ -123,7 +117,7 @@ module.exports = {
 		'eslint:recommended',
 		'prettier'
 	],
-	plugins: ['spruce', 'import', 'react', 'prettier', 'prefer-arrow-functions', 'sort-class-members'],
+	plugins: ['spruce', 'import', 'react', 'prettier', 'sort-class-members'],
 	rules: {
 		...defaultFormattingRules
 	},
