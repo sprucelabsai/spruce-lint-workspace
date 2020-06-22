@@ -63,7 +63,15 @@ const defaultFormattingRules = {
 		{
 			"classPropertiesAllowed": true
 		}
-	]
+	],
+	"sort-class-members/sort-class-members": [2, {
+		"order": [
+			"[properties]",
+			"constructor",
+			"[methods]"
+		],
+		"accessorPairPositioning": "getThenSet",
+	}]
 }
 
 module.exports = {
@@ -100,27 +108,6 @@ module.exports = {
 						}
 					}
 				],
-				'@typescript-eslint/member-ordering': [
-					'error',
-					{
-						order: [
-							'public-static-field',
-							'protected-static-field',
-							'private-static-field',
-							'public-instance-field',
-							'protected-instance-field',
-							'private-instance-field',
-							'constructor',
-							'public-static-method',
-							'protected-static-method',
-							'private-static-method',
-							'public-instance-method',
-							'protected-instance-method',
-							'private-instance-method'
-						],
-						alphabetize: true
-					}
-				],
 				"@typescript-eslint/explicit-member-accessibility": ["error"],
 				...defaultFormattingRules
 			}
@@ -136,7 +123,7 @@ module.exports = {
 		'eslint:recommended',
 		'prettier'
 	],
-	plugins: ['spruce', 'import', 'react', 'prettier', 'prefer-arrow-functions'],
+	plugins: ['spruce', 'import', 'react', 'prettier', 'prefer-arrow-functions', 'sort-class-members'],
 	rules: {
 		...defaultFormattingRules
 	},
