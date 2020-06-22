@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.5.2](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.5.1...v10.5.2) (2020-06-22)
+
+
+### Bug Fixes
+
+* variables before functions (accessor agnostic) ([6f90d24](https://github.com/sprucelabsai/spruce-lint-workspace/commit/6f90d24))
+
+
+
+
+
 ## [10.5.1](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.5.0...v10.5.1) (2020-06-20)
 
 
