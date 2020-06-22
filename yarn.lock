@@ -2166,11 +2166,6 @@ eslint-plugin-jsx-a11y@6.1.2:
     has "^1.0.3"
     jsx-ast-utils "^2.0.1"
 
-eslint-plugin-prefer-arrow-functions@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prefer-arrow-functions/-/eslint-plugin-prefer-arrow-functions-3.0.1.tgz#996bf26e93c8cfffff34e86bfe9ff71cbb54bbe2"
-  integrity sha512-Sqwa3p33qXd0Yrva7uYkms0UOzxKIFnv3ihqplSYtal/i4gbdDDM2GvJG4Ob2O5VLw61act/qPt0b41Eg/47Yg==
-
 eslint-plugin-prettier@^3.1.1:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.2.tgz#432e5a667666ab84ce72f945c72f77d996a5c9ba"
