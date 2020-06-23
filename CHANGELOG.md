@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.5.5](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.5.4...v10.5.5) (2020-06-23)
+
+
+### Bug Fixes
+
+* remove sort-class-members ([63fc4ea](https://github.com/sprucelabsai/spruce-lint-workspace/commit/63fc4ea))
+
+
+
+
+
 ## [10.5.4](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.5.3...v10.5.4) (2020-06-23)
 
 
