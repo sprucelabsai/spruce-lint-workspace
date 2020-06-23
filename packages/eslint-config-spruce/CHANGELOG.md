@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.5.4](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/compare/v10.5.3...v10.5.4) (2020-06-23)
+
+
+### Bug Fixes
+
+* arrows above methods ([4635651](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/commit/4635651))
+
+
+
+
+
 ## [10.5.3](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/compare/v10.5.2...v10.5.3) (2020-06-22)
 
 
