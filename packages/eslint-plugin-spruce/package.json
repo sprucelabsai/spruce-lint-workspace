@@ -13,11 +13,17 @@
 		"type": "git",
 		"url": "git+https://github.com/sprucelabsai/workspace.sprucebot-skills-kit.git"
 	},
-	"scripts": {},
+	"scripts": {
+		"arkit": "arkit -f index.js -o docs/images/arkit.svg",
+		"arkit.png": "arkit -f index.js -o docs/images/arkit.png"
+	},
 	"bugs": {
 		"url": "https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/issues"
 	},
 	"dependencies": {
 		"pascal-case": "^2.0.1"
+	},
+	"devDependencies": {
+		"arkit": "^1.6.4"
 	}
 }
