@@ -1,5 +1,5 @@
 // From https://github.com/Shopify/eslint-plugin-shopify/blob/master/lib/rules/typescript/prefer-pascal-case-enums.js
-const pascalCase = require('pascal-case')
+const { pascalCase } = require('pascal-case')
 
 module.exports = {
 	meta: {
