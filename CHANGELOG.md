@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.5.8](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.5.7...v10.5.8) (2020-07-09)
+
+
+### Bug Fixes
+
+* typescript-eslint/eslint-plugin 2 -> 3 broke things ([3cdf5b9](https://github.com/sprucelabsai/spruce-lint-workspace/commit/3cdf5b9))
+
+
+
+
+
 ## [10.5.7](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.5.6...v10.5.7) (2020-07-09)
 
 **Note:** Version bump only for package spruce-lint-workspace
