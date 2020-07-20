@@ -4,7 +4,8 @@
   "name": "spruce-lint-workspace",
   "workspaces": [
     "packages/eslint-plugin-spruce",
-    "packages/eslint-config-spruce"
+    "packages/eslint-config-spruce",
+    "packages/eslint-test-spruce"
   ],
   "engines": {
     "node": ">=10",
@@ -31,6 +32,6 @@
   "devDependencies": {
     "conventional-changelog-sprucelabs": "^1.1.0",
     "lerna": "^3.22.1",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.7"
   }
 }
