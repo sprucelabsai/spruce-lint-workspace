@@ -1,4 +1,4 @@
-const typescriptEslintRecommended = require('@typescript-eslint/eslint-plugin/dist/configs/recommended.json')
+const typescriptEslintRecommended = require('@typescript-eslint/eslint-plugin/dist/configs/recommended.js')
 const typescriptEslintPrettier = require('eslint-config-prettier/@typescript-eslint')
 const importRules = require('eslint-plugin-import/config/errors')
 
@@ -69,9 +69,26 @@ module.exports = {
 			rules: {
 				...typescriptEslintRecommended.rules,
 				...typescriptEslintPrettier.rules,
-				'@typescript-eslint/camelcase': [
+				// new items 3.x
+				'@typescript-eslint/explicit-module-boundary-types': 0, // error
+				"@typescript-eslint/ban-ts-comment": 0, // log
+				'@typescript-eslint/no-var-requires': 0, // cli
+				// end new 3.x
+				// removed 3.x
+				//'@typescript-eslint/camelcase': [
+				//	'error',
+				//	{ allow: ['^(can_|skill_can_)'] }
+				//],
+				// replaces camelcase
+				'@typescript-eslint/naming-convention': [
 					'error',
-					{ allow: ['^(can_|skill_can_)'] }
+					{
+					  'format': ['CamelCase'],
+					  'custom': {
+						'regex': '^(can_|skill_can_)',
+						'match': true
+					  }
+					}
 				],
 				'@typescript-eslint/no-empty-interface': 0,
 				// TODO: Remove this if we can; it isn't a good rule to squash.
@@ -79,7 +96,20 @@ module.exports = {
 				'@typescript-eslint/ban-ts-ignore': 0,
 				'@typescript-eslint/no-empty-function': 0,
 				'@typescript-eslint/explicit-function-return-type': 0,
-				'@typescript-eslint/interface-name-prefix': [2, 'always'],
+				// removed 3.x
+				//'@typescript-eslint/interface-name-prefix': [2, 'always'],
+				// replaces interface-name-prefix
+				'@typescript-eslint/naming-convention': [
+					'error',
+					{
+					  'selector': 'interface',
+					  'format': ['PascalCase'],
+					  'custom': {
+						'regex': '^I[A-Z]',
+						'match': true
+					  }
+					}
+				],
 				'@typescript-eslint/no-explicit-any': 0,
 				'@typescript-eslint/member-delimiter-style': [
 					'error',
