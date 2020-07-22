@@ -11,11 +11,11 @@ jobs:
             - "ec:9f:2e:aa:1f:c9:ab:49:57:8f:c0:cd:2e:5b:f3:b0"
       - checkout
       - run:
-          name: "Check and skip if npm-release"
+          name: "Check and skip if npm-publish"
           command: |
             COMMIT_MSG=$(git log --format=oneline -n 1 $CIRCLE_SHA1)
-            if [[ $COMMIT_MSG == *"[npm-release]"* ]]; then
-              echo "[npm-release] detected. No publish necessary 👊"
+            if [[ $COMMIT_MSG == *"[npm-publish]"* ]]; then
+              echo "[npm-publish] detected. No publish necessary 👊"
               circleci step halt
             fi
       - run: node -v && npm -v && yarn -v
@@ -56,11 +56,11 @@ jobs:
             - "ec:9f:2e:aa:1f:c9:ab:49:57:8f:c0:cd:2e:5b:f3:b0"
       - checkout
       - run:
-          name: "Check and skip if npm-release"
+          name: "Check and skip if npm-publish"
           command: |
             COMMIT_MSG=$(git log --format=oneline -n 1 $CIRCLE_SHA1)
-            if [[ $COMMIT_MSG == *"[npm-release]"* ]]; then
-              echo "[npm-release] detected. No publish necessary 👊"
+            if [[ $COMMIT_MSG == *"[npm-publish]"* ]]; then
+              echo "[npm-publish] detected. No publish necessary 👊"
               circleci step halt
             fi
       - restore_cache:
@@ -73,7 +73,7 @@ jobs:
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-      - run: 'npm run publish -- --yes --force-publish --dist-tag latest --message "chore(release): %v [npm-release]"'
+      - run: 'npm run publish -- --yes --force-publish --dist-tag latest --message "chore(release): %v [npm-publish]"'
   upgrade:
     docker:
       - image: circleci/node:12
@@ -103,7 +103,7 @@ jobs:
       - run:
           name: "Create PR"
           command: |
-            git commit -a -m "[chore] upgrade all [automated]"
+            git commit -a -m "chore(auto-upgrade): upgraded packages [upgrade-all]"
             git push --force origin $TARGETBRANCH
             git push --set-upstream origin $TARGETBRANCH
             echo "$(hub pull-request --base master --head $TARGETBRANCH -m 'Automated Package Upgrade' 2>&1)" |egrep "/pull/|already exists"
