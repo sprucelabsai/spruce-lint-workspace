@@ -1,6 +1,6 @@
 {
   "name": "eslint-test-spruce",
-  "version": "10.6.8",
+  "version": "10.6.9",
   "private": true,
   "description": "Tests for the Spruce Lint packages",
   "license": "MIT"
