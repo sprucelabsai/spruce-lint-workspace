@@ -1,7 +1,7 @@
 enum SomeEnum {
 	TacoTuesday,
 	Wednesday,
-	TheBestIsLast
+	TheBestIsLast,
 }
 
 console.log(SomeEnum)
