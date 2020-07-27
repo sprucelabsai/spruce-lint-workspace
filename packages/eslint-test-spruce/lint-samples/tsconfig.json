@@ -13,7 +13,9 @@
     "noUnusedLocals": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
-    "sourceMap": true
+    "sourceMap": true,
+    "baseUrl": "."
   },
-  "exclude": ["**/node_modules/**"]
+  "include": ["./*.ts", "./**/*.ts"],
+  "exclude": ["**/node_modules/**", "./packages/**/build"]
 }
