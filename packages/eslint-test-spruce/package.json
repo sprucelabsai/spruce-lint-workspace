@@ -1,6 +1,6 @@
 {
   "name": "eslint-test-spruce",
-  "version": "10.7.0",
+  "version": "10.7.1",
   "private": true,
   "description": "Tests for the Spruce Lint packages",
   "license": "MIT",
@@ -18,6 +18,6 @@
     "resolve-from": "^5.0.0"
   },
   "dependencies": {
-    "eslint-config-spruce": "^10.7.0"
+    "eslint-config-spruce": "^10.7.1"
   }
 }
