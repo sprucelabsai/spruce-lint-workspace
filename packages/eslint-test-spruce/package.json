@@ -1,10 +1,9 @@
 {
   "name": "eslint-test-spruce",
-  "version": "10.6.19",
+  "version": "10.7.0",
   "private": true,
   "description": "Tests for the Spruce Lint packages",
   "license": "MIT",
-  "dependencies": {},
   "scripts": {
     "test.fail": "cd lint-samples/; for d in fail-*; do echo Trying $d - expecting errors ; eslint $d; if [ $? -ne 1 ]; then echo FAILED: $d; exit 1; fi; echo 👍; done",
     "test.pass": "cd lint-samples/; for d in pass-*; do echo Trying $d - expecting success; eslint $d; if [ $? -ne 0 ]; then echo FAILED: $d; exit 1; fi; echo 👍; done",
@@ -15,7 +14,7 @@
     "@typescript-eslint/eslint-plugin": "^3.7.1",
     "@typescript-eslint/parser": "^3.7.1",
     "eslint": "^7.5.0",
-    "eslint-config-spruce": "^10.6.15",
+    "eslint-config-spruce": "^10.7.0",
     "prettier": "^2.0.5",
     "resolve-from": "^5.0.0"
   }

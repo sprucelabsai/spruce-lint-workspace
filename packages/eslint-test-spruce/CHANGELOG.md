@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.7.0](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.6.19...v10.7.0) (2020-07-28)
+
+
+### Bug Fixes
+
+* add missing prettier ([72348b8](https://github.com/sprucelabsai/spruce-lint-workspace/commit/72348b8))
+* update to use latest prettier config ([d1a7790](https://github.com/sprucelabsai/spruce-lint-workspace/commit/d1a7790))
+
+
+### Features
+
+* add tests to workspace ([b89c602](https://github.com/sprucelabsai/spruce-lint-workspace/commit/b89c602))
+
+
+
+
+
 ## [10.6.19](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.6.18...v10.6.19) (2020-07-27)
 
 **Note:** Version bump only for package eslint-test-spruce
