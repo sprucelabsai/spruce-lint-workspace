@@ -14,8 +14,10 @@
     "@typescript-eslint/eslint-plugin": "^3.7.1",
     "@typescript-eslint/parser": "^3.7.1",
     "eslint": "^7.5.0",
-    "eslint-config-spruce": "^10.7.0",
     "prettier": "^2.0.5",
     "resolve-from": "^5.0.0"
+  },
+  "dependencies": {
+    "eslint-config-spruce": "^10.7.0"
   }
 }
