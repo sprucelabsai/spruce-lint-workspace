@@ -5,8 +5,8 @@
   "description": "Tests for the Spruce Lint packages",
   "license": "MIT",
   "scripts": {
-    "test.fail": "cd lint-samples/; for d in fail-*; do echo Trying $d - expecting errors ; eslint $d; if [ $? -ne 1 ]; then echo FAILED: $d; exit 1; fi; echo 👍; done",
-    "test.pass": "cd lint-samples/; for d in pass-*; do echo Trying $d - expecting success; eslint $d; if [ $? -ne 0 ]; then echo FAILED: $d; exit 1; fi; echo 👍; done",
+    "test.fail": "cd lint-samples/; for d in fail-*; do echo \" \n \nTrying $d\nExpecting errors\" ; eslint $d; if [ $? -ne 1 ]; then echo FAILED: $d; exit 1; fi; echo \"👍\n \"; done",
+    "test.pass": "cd lint-samples/; for d in pass-*; do echo \" \n \nTrying $d\nExpecting success\"; eslint $d; if [ $? -ne 0 ]; then echo FAILED: $d; exit 1; fi; echo \"👍\n \"; done",
     "test": "yarn test.fail && yarn test.pass"
   },
   "devDependencies": {
