@@ -32,7 +32,7 @@
 		"eslint-plugin-spruce": "^10.7.7"
 	},
 	"peerDependencies": {
-		"eslint": "^7.5.0",
+		"eslint": "^7.6.0",
 		"prettier": "^2.0.5",
 		"typescript": "^3.9.7"
 	},
