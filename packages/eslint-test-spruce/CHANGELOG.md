@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.7.10](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.9...v10.7.10) (2020-08-03)
+
+**Note:** Version bump only for package eslint-test-spruce
+
+
+
+
+
 ## [10.7.9](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.8...v10.7.9) (2020-08-02)
 
 **Note:** Version bump only for package eslint-test-spruce
