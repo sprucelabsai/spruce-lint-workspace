@@ -7,6 +7,7 @@ const defaultFormattingRules = {
 	'spruce/utils-graphql': 'error',
 	'spruce/prefer-pascal-case-enums': 'error',
 	'spruce/prefer-spruce-hash-import': 'error',
+	'spruce/prohibit-import-from-build-folder': 'error',
 	'react/jsx-no-undef': 'error',
 	'no-console': 'off',
 	'no-undef': 'error',
@@ -105,7 +106,7 @@ module.exports = {
 					  'selector': 'interface',
 					  'format': ['PascalCase'],
 					  'custom': {
-						'regex': '^I[A-Z]',
+						'regex': '^[A-Z]',
 						'match': true
 					  }
 					}
