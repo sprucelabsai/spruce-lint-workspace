@@ -97,6 +97,20 @@ module.exports = {
 				'@typescript-eslint/ban-ts-ignore': 0,
 				'@typescript-eslint/no-empty-function': 0,
 				'@typescript-eslint/explicit-function-return-type': 0,
+				// removed 3.x
+				//'@typescript-eslint/interface-name-prefix': [2, 'always'],
+				// replaces interface-name-prefix
+				'@typescript-eslint/naming-convention': [
+					'error',
+					{
+					  'selector': 'interface',
+					  'format': ['PascalCase'],
+					  'custom': {
+						'regex': '^[A-Z]',
+						'match': true
+					  }
+					}
+				],
 				'@typescript-eslint/no-explicit-any': 0,
 				'@typescript-eslint/member-delimiter-style': [
 					'error',
