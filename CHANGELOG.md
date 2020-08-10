@@ -3,6 +3,182 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.7.25](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.24...v10.7.25) (2020-08-09)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.24](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.23...v10.7.24) (2020-08-09)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.23](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.22...v10.7.23) (2020-08-09)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.22](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.21...v10.7.22) (2020-08-09)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.21](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.20...v10.7.21) (2020-08-09)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.20](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.19...v10.7.20) (2020-08-08)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.19](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.18...v10.7.19) (2020-08-08)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.18](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.17...v10.7.18) (2020-08-08)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.17](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.16...v10.7.17) (2020-08-08)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.16](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.15...v10.7.16) (2020-08-05)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.15](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.14...v10.7.15) (2020-08-05)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.14](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.13...v10.7.14) (2020-08-04)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.13](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.12...v10.7.13) (2020-08-04)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.12](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.11...v10.7.12) (2020-08-04)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.11](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.10...v10.7.11) (2020-08-03)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.10](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.9...v10.7.10) (2020-08-03)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.9](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.8...v10.7.9) (2020-08-02)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.8](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.7...v10.7.8) (2020-08-01)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.7](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.6...v10.7.7) (2020-07-31)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.6](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.5...v10.7.6) (2020-07-30)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.5](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.4...v10.7.5) (2020-07-30)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
+## [10.7.4](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.3...v10.7.4) (2020-07-30)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
 ## [10.7.3](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.7.2...v10.7.3) (2020-07-28)
 
 **Note:** Version bump only for package spruce-lint-workspace
