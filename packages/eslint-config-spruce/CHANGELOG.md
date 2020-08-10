@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.8.0](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/compare/v10.7.25...v10.8.0) (2020-08-10)
+
+
+### Bug Fixes
+
+* require pascalcase interface names, add tests ([59780e5](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/commit/59780e5))
+
+
+### Features
+
+* prohibit import from build folder ([7daf66d](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/commit/7daf66d))
+
+
+
+
+
 ## [10.7.25](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/compare/v10.7.24...v10.7.25) (2020-08-09)
 
 **Note:** Version bump only for package eslint-config-spruce
