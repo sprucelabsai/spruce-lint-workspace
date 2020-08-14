@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.8.10](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/compare/v10.8.9...v10.8.10) (2020-08-14)
+
+**Note:** Version bump only for package eslint-config-spruce
+
+
+
+
+
 ## [10.8.9](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/compare/v10.8.8...v10.8.9) (2020-08-13)
 
 **Note:** Version bump only for package eslint-config-spruce
