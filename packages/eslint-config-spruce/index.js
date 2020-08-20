@@ -14,6 +14,7 @@ const defaultFormattingRules = {
 	'no-var': 'error',
 	'no-unreachable': 'error',
 	'no-unused-vars': ['error', {'argsIgnorePattern': '^_'}],
+	'@typescript-eslint/no-floating-promises': 'error',
 	'@typescript-eslint/no-unused-vars': ['error', {'argsIgnorePattern': '^_'}],
 	'object-shorthand': ['error', 'always'],
 	'react/prop-types': 'off',
