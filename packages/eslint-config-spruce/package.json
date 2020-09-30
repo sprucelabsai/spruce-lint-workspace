@@ -3,7 +3,7 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"version": "10.9.67",
+	"version": "10.9.68",
 	"description": "ESLint configuration for Spruce Javascript projects",
 	"author": "George Pantazis <gcpantazis@gmail.com>",
 	"homepage": "https://github.com/sprucelabsai/workspace.sprucebot-skills-kit#readme",
@@ -29,7 +29,7 @@
 		"eslint-plugin-jsx-a11y": "^6.3.1",
 		"eslint-plugin-prettier": "^3.1.4",
 		"eslint-plugin-react": "^7.21.2",
-		"eslint-plugin-spruce": "^10.9.67"
+		"eslint-plugin-spruce": "^10.9.68"
 	},
 	"peerDependencies": {
 		"eslint": "^7.10.0",
