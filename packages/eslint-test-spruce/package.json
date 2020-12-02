@@ -10,7 +10,7 @@
     "test": "yarn test.fail && yarn test.pass"
   },
   "devDependencies": {
-    "@types/eslint": "^7.2.5",
+    "@types/eslint": "^7.2.6",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
     "eslint": "^7.14.0",
