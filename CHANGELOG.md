@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.9.115](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.9.114...v10.9.115) (2020-12-02)
+
+**Note:** Version bump only for package spruce-lint-workspace
+
+
+
+
+
 ## [10.9.114](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.9.113...v10.9.114) (2020-11-30)
 
 **Note:** Version bump only for package spruce-lint-workspace
