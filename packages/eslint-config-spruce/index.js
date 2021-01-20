@@ -14,8 +14,6 @@ const defaultFormattingRules = {
 	'no-var': 'error',
 	'no-unreachable': 'error',
 	'no-unused-vars': ['error', {'argsIgnorePattern': '^_'}],
-	'@typescript-eslint/no-floating-promises': 'error',
-	'@typescript-eslint/no-unused-vars': ['error', {'argsIgnorePattern': '^_'}],
 	'object-shorthand': ['error', 'always'],
 	'react/prop-types': 'off',
 	'prettier/prettier': [
@@ -92,6 +90,8 @@ module.exports = {
 					  }
 					}
 				],
+				'@typescript-eslint/no-floating-promises': 'error',
+				'@typescript-eslint/no-unused-vars': ['error', {'argsIgnorePattern': '^_'}],
 				'@typescript-eslint/no-empty-interface': 0,
 				// TODO: Remove this if we can; it isn't a good rule to squash.
 				// Sometimes this is fine, but sometimes it masks a compile error.
