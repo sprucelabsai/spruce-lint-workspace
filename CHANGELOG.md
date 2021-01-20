@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.9.135](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.9.134...v10.9.135) (2021-01-20)
+
+
+### Bug Fixes
+
+* don't use ts rules on non-ts files ([3e9319c](https://github.com/sprucelabsai/spruce-lint-workspace/commit/3e9319c))
+
+
+
+
+
 ## [10.9.134](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v10.9.133...v10.9.134) (2021-01-18)
 
 **Note:** Version bump only for package spruce-lint-workspace
