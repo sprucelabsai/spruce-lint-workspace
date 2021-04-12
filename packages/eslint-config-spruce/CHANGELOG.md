@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.10.0](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/compare/v10.9.136...v10.10.0) (2021-04-12)
+
+
+### Features
+
+* block importing on schema in *.builder.ts ([27b1e5b](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/commit/27b1e5b))
+
+
+
+
+
 ## [10.9.136](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/compare/v10.9.135...v10.9.136) (2021-03-02)
 
 **Note:** Version bump only for package eslint-config-spruce
