@@ -131,6 +131,14 @@ module.exports = {
 			}
 		},
 		{
+			files: ['*.builder.ts', '*.builder.tsx'],
+			parser: '@typescript-eslint/parser',
+			plugins: ['@typescript-eslint'],
+			rules: {
+				'spruce/prohibit-import-of-schema-in-builders': 'error',
+			}
+		},
+		{
 			files: ['*.js'],
 			plugins: ['@typescript-eslint'],
 			rules: Object.assign(importRules.rules)
