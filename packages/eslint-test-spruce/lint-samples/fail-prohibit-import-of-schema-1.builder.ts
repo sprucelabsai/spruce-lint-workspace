@@ -1,3 +1,3 @@
-import Schema from 'otherbuild/taco'
+import taco from 'ninja.schema'
 
-console.log(Schema)
+console.log(taco)

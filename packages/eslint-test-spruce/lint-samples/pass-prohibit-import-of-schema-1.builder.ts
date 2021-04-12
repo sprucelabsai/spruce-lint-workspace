@@ -1,3 +1,3 @@
-import taco from 'otherbuild/taco'
+import Schema from 'otherbuild/taco'
 
-console.log(taco.taco)
+console.log(Schema)

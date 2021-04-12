@@ -10,13 +10,14 @@ module.exports = {
 		return {
 			ImportDeclaration(options) {
 				const node = options.source
+				const importPath = node.value
 
-				options.specifiers.forEach(specifier => { console.log(specifier.local.name); if (/^.*Schema/.test(specifier.local.name)) {
+				if (/.*(\.schema)/.test(importPath)) {
 					context.report({
 						node,
 						message: 'Import should not import schema in builders'
 					})
-				} } )
+				}
 			}
 		}
 	}
