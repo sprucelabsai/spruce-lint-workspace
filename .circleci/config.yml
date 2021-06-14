@@ -19,7 +19,6 @@ jobs:
               circleci-agent step halt
             fi
       - run: node -v && npm -v && yarn -v
-      - run: yarn clean
       - run: yarn install
       - run: yarn lint
       - run: yarn build.ci
