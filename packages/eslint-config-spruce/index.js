@@ -4,7 +4,6 @@ const importRules = require('eslint-plugin-import/config/errors')
 
 const defaultFormattingRules = {
 	curly: 'error',
-	'spruce/utils-graphql': 'error',
 	'spruce/prefer-pascal-case-enums': 'error',
 	'spruce/prefer-spruce-hash-import': 'error',
 	'spruce/prohibit-import-from-build-folder': 'error',
@@ -69,6 +68,7 @@ module.exports = {
 			rules: {
 				...typescriptEslintRecommended.rules,
 				...typescriptEslintPrettier.rules,
+				...defaultFormattingRules,
 				// new items 3.x
 				'@typescript-eslint/explicit-module-boundary-types': 0, // error
 				"@typescript-eslint/ban-ts-comment": 0, // log
@@ -91,6 +91,7 @@ module.exports = {
 					}
 				],
 				'@typescript-eslint/no-floating-promises': 'error',
+				"no-unused-vars": "off",
 				'@typescript-eslint/no-unused-vars': ['error', {'argsIgnorePattern': '^_'}],
 				'@typescript-eslint/no-empty-interface': 0,
 				// TODO: Remove this if we can; it isn't a good rule to squash.
@@ -127,7 +128,7 @@ module.exports = {
 					}
 				],
 				"@typescript-eslint/explicit-member-accessibility": ["error"],
-				...defaultFormattingRules
+				
 			}
 		},
 		{
