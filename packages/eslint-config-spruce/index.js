@@ -7,14 +7,12 @@ const defaultFormattingRules = {
 	'spruce/prefer-pascal-case-enums': 'error',
 	'spruce/prefer-spruce-hash-import': 'error',
 	'spruce/prohibit-import-from-build-folder': 'error',
-	'react/jsx-no-undef': 'error',
 	'no-console': 'off',
 	'no-undef': 'error',
 	'no-var': 'error',
 	'no-unreachable': 'error',
 	'no-unused-vars': ['error', {'argsIgnorePattern': '^_'}],
 	'object-shorthand': ['error', 'always'],
-	'react/prop-types': 'off',
 	'prettier/prettier': [
 		'error',
 		{
@@ -90,7 +88,6 @@ module.exports = {
 					  }
 					}
 				],
-				'@typescript-eslint/no-floating-promises': 'error',
 				"no-unused-vars": "off",
 				'@typescript-eslint/no-unused-vars': ['error', {'argsIgnorePattern': '^_'}],
 				'@typescript-eslint/no-empty-interface': 0,
@@ -146,11 +143,10 @@ module.exports = {
 		}
 	],
 	extends: [
-		'plugin:react/recommended',
 		'eslint:recommended',
 		'prettier'
 	],
-	plugins: ['spruce', 'import', 'react', 'prettier'],
+	plugins: ['spruce', 'import', 'prettier'],
 	rules: {
 		...defaultFormattingRules
 	},
@@ -176,10 +172,6 @@ module.exports = {
 	},
 	settings: {
 		flowtype: {},
-		react: {
-			version: '16.6',
-			flowVersion: '0.87'
-		},
 		'import/resolver': {
 			node: {
 				extensions: ['.js', '.jsx', '.ts', '.tsx']
