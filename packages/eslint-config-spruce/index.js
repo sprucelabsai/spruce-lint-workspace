@@ -69,13 +69,7 @@ module.exports = {
 				'@typescript-eslint/explicit-module-boundary-types': 0, // error
 				"@typescript-eslint/ban-ts-comment": 0, // log
 				'@typescript-eslint/no-var-requires': 0, // cli
-				// end new 3.x
-				// removed 3.x
-				//'@typescript-eslint/camelcase': [
-				//	'error',
-				//	{ allow: ['^(can_|skill_can_)'] }
-				//],
-				// replaces camelcase
+				'@typescript-eslint/no-extra-semi': 0,  // eslint 8 - conflicts with prettier
 				'@typescript-eslint/naming-convention': [
 					'error',
 					{
@@ -95,9 +89,6 @@ module.exports = {
 				'@typescript-eslint/ban-ts-ignore': 0,
 				'@typescript-eslint/no-empty-function': 0,
 				'@typescript-eslint/explicit-function-return-type': 0,
-				// removed 3.x
-				//'@typescript-eslint/interface-name-prefix': [2, 'always'],
-				// replaces interface-name-prefix
 				'@typescript-eslint/naming-convention': [
 					'error',
 					{
