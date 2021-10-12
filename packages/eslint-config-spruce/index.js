@@ -1,5 +1,4 @@
 const typescriptEslintRecommended = require('@typescript-eslint/eslint-plugin/dist/configs/recommended.js')
-const typescriptEslintPrettier = require('eslint-config-prettier/@typescript-eslint')
 const importRules = require('eslint-plugin-import/config/errors')
 
 const defaultFormattingRules = {
@@ -65,7 +64,6 @@ module.exports = {
 			plugins: ['@typescript-eslint'],
 			rules: {
 				...typescriptEslintRecommended.rules,
-				...typescriptEslintPrettier.rules,
 				...defaultFormattingRules,
 				// new items 3.x
 				'@typescript-eslint/explicit-module-boundary-types': 0, // error
@@ -145,7 +143,8 @@ module.exports = {
 	],
 	extends: [
 		'eslint:recommended',
-		'prettier'
+		'prettier',
+		"plugin:prettier/recommended"
 	],
 	plugins: ['spruce', 'import', 'prettier'],
 	rules: {
