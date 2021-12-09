@@ -1,7 +1,7 @@
 module.exports = {
 	meta: {
 		docs: {
-			description: 'Prohibit imports of schema in builders',
+			description: 'Prohibit imports of builders in viewcontrollers',
 			category: 'Stylistic Issues',
 			recommended: true
 		}
@@ -12,10 +12,10 @@ module.exports = {
 				const node = options.source
 				const importPath = node.value
 
-				if (/.*(\.schema$)/.test(importPath)) {
+				if (/.*(\.builder$)/.test(importPath)) {
 					context.report({
 						node,
-						message: 'Import should not import schema in builders'
+						message: 'Import should not import builders in viewcontrollers'
 					})
 				}
 			}

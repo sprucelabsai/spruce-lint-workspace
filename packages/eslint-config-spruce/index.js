@@ -123,7 +123,15 @@ module.exports = {
 			parser: '@typescript-eslint/parser',
 			plugins: ['@typescript-eslint'],
 			rules: {
-				//'spruce/prohibit-import-of-schema-in-builders': 'error',
+				'spruce/prohibit-import-of-schema-in-builders': 'error',
+			}
+		},
+		{
+			files: ['*.svc.ts', '*.vc.ts'],
+			parser: '@typescript-eslint/parser',
+			plugins: ['@typescript-eslint'],
+			rules: {
+				'spruce/prohibit-import-of-builder-in-viewcontrollers': 'error',
 			}
 		},
 		{
