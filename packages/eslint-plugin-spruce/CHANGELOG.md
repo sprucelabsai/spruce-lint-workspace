@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.11.0](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/compare/v10.10.16...v10.11.0) (2021-12-09)
+
+
+### Features
+
+* added prohibit import of schema in builders / builders in view controllers ([0a47581](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/commit/0a47581))
+
+
+
+
+
 ## [10.10.16](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/compare/v10.10.15...v10.10.16) (2021-11-25)
 
 **Note:** Version bump only for package eslint-plugin-spruce
