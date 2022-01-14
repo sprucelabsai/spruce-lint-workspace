@@ -20,39 +20,39 @@ const defaultFormattingRules = {
 			semi: false
 		}
 	],
-	"capitalized-comments": [
-		"error",
-		"always",
+	'capitalized-comments': [
+		'error',
+		'always',
 		{
-			"line": {
-				"ignorePattern": ".*",
+			'line': {
+				'ignorePattern': '.*',
 			},
-			"block": {
-				"ignoreInlineComments": true,
-				"ignoreConsecutiveComments": true
+			'block': {
+				'ignoreInlineComments': true,
+				'ignoreConsecutiveComments': true
 			}
 		}
 	],
 	'import/order': ['error', {
-		"alphabetize": {
-			"order": "asc",
-			"caseInsensitive": true
+		'alphabetize': {
+			'order': 'asc',
+			'caseInsensitive': true
 		},
-		"newlines-between": "never",
-		"groups": [ "builtin", "external", "internal", "parent", "index", "sibling", "unknown" ],
-		"pathGroups": [
+		'newlines-between': 'never',
+		'groups': [ 'builtin', 'external', 'internal', 'parent', 'index', 'sibling', 'unknown' ],
+		'pathGroups': [
 			{
-				"pattern": "@sprucelabs/**",
-				"group": "external",
-				"position": "before"
+				'pattern': '@sprucelabs/**',
+				'group': 'external',
+				'position': 'before'
 			},
 			{
-				"pattern": "#spruce/**",
-				"group": "internal",
-				"position": "before"
+				'pattern': '#spruce/**',
+				'group': 'internal',
+				'position': 'before'
 			}
 		],
-		"pathGroupsExcludedImportTypes": ["builtin"]
+		'pathGroupsExcludedImportTypes': ['builtin']
 	}]
 }
 
@@ -67,7 +67,7 @@ module.exports = {
 				...defaultFormattingRules,
 				// new items 3.x
 				'@typescript-eslint/explicit-module-boundary-types': 0, // error
-				"@typescript-eslint/ban-ts-comment": 0, // log
+				'@typescript-eslint/ban-ts-comment': 0, // log
 				'@typescript-eslint/no-var-requires': 0, // cli
 				'@typescript-eslint/no-extra-semi': 0,  // eslint 8 - conflicts with prettier
 				'@typescript-eslint/naming-convention': [
@@ -81,7 +81,7 @@ module.exports = {
 					}
 				],
 				'@typescript-eslint/no-floating-promises': process.env.CI === 'true' ? 'error' : 'off',
-				"no-unused-vars": "off",
+				'no-unused-vars': 'off',
 				'@typescript-eslint/no-unused-vars': ['error', {'argsIgnorePattern': '^_'}],
 				'@typescript-eslint/no-empty-interface': 0,
 				// TODO: Remove this if we can; it isn't a good rule to squash.
@@ -114,7 +114,8 @@ module.exports = {
 						}
 					}
 				],
-				"@typescript-eslint/explicit-member-accessibility": ["error"],
+				'@typescript-eslint/no-namespace': 0,
+				'@typescript-eslint/explicit-member-accessibility': ['error'],
 				
 			}
 		},
@@ -143,7 +144,7 @@ module.exports = {
 	extends: [
 		'eslint:recommended',
 		'prettier',
-		"plugin:prettier/recommended"
+		'plugin:prettier/recommended'
 	],
 	plugins: ['spruce', 'import', 'prettier'],
 	rules: {
