@@ -6,6 +6,7 @@ const defaultFormattingRules = {
 	'spruce/prefer-pascal-case-enums': 'error',
 	'spruce/prefer-spruce-hash-import': 'error',
 	'spruce/prohibit-import-from-build-folder': 'error',
+	'no-async-promise-executor': 'off',
 	'no-console': 'off',
 	'no-undef': 'error',
 	'no-var': 'error',
