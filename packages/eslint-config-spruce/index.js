@@ -118,7 +118,7 @@ module.exports = {
 				'@typescript-eslint/no-namespace': 0,
 				'@typescript-eslint/no-non-null-assertion': 0,
 				'@typescript-eslint/explicit-member-accessibility': ['error'],
-				
+				"deprecation/deprecation": "warn",
 			}
 		},
 		{
@@ -148,7 +148,7 @@ module.exports = {
 		'prettier',
 		'plugin:prettier/recommended'
 	],
-	plugins: ['spruce', 'import', 'prettier'],
+	plugins: ['spruce', 'deprecation', 'import', 'prettier'],
 	rules: {
 		...defaultFormattingRules
 	},
