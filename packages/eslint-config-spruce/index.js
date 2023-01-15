@@ -136,6 +136,7 @@ module.exports = {
 			plugins: ['@typescript-eslint'],
 			rules: {
 				'spruce/prohibit-import-of-builder-in-viewcontrollers': 'error',
+				'spruce/prohibit-import-of-spruce-dateutils-in-vcs': 'error',
 			}
 		},
 		{
