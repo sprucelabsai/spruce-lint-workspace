@@ -118,6 +118,7 @@ module.exports = {
 				'@typescript-eslint/no-namespace': 0,
 				'@typescript-eslint/no-non-null-assertion': 0,
 				'@typescript-eslint/explicit-member-accessibility': ['error'],
+				'@typescript-eslint/no-misused-new': 0,
 				"deprecation/deprecation": process.env.CI === 'true' ? 'warn' : 'off',
 			}
 		},
