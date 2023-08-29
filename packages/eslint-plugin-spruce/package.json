@@ -3,7 +3,7 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"version": "10.13.3",
+	"version": "10.13.4",
 	"description": "ESLint plugin for Spruce Javascript projects",
 	"author": "George Pantazis <gcpantazis@gmail.com>",
 	"homepage": "https://github.com/sprucelabsai/workspace.sprucebot-skills-kit#readme",
@@ -19,5 +19,6 @@
 	},
 	"dependencies": {
 		"pascal-case": "^3.1.2"
-	}
+	},
+	"gitHead": "e47e7dec9c49309ac433bc8fb5d70a718c5fc741"
 }
