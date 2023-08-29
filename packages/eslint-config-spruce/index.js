@@ -39,6 +39,7 @@ const defaultFormattingRules = {
 	'prettier/prettier': [
 		'error',
 		{
+			trailingComma: "es5",
 			singleQuote: true,
 			useTabs: true,
 			semi: false
