@@ -15,10 +15,10 @@
     "build.ci": "lerna run build.ci",
     "build.dev": "lerna run build.dev",
     "build.dist": "lerna run build.dist",
-		"clean": "lerna run clean",
-		"clean.all": "yarn clean.dependencies && yarn clean.build",
-		"clean.build": "for d in packages/*; do echo $d; cd $d; yarn clean.build; cd ../..; done",
-		"clean.dependencies": "rm -rf node_modules/ package-lock.json yarn.lock && for d in packages/*; do echo $d; cd $d; yarn clean.dependencies; cd ../..; done",
+    "clean": "lerna run clean",
+    "clean.all": "yarn clean.dependencies && yarn clean.build",
+    "clean.build": "for d in packages/*; do echo $d; cd $d; yarn clean.build; cd ../..; done",
+    "clean.dependencies": "rm -rf node_modules/ package-lock.json yarn.lock && for d in packages/*; do echo $d; cd $d; yarn clean.dependencies; cd ../..; done",
     "fix.lint": "lerna run fix.lint",
     "lint": "lerna run lint",
     "publish": "lerna publish",
@@ -34,8 +34,8 @@
   "dependencies": {},
   "devDependencies": {
     "conventional-changelog-sprucelabs": "^1.1.2",
-    "lerna": "^4.0.0",
-    "typescript": "^5.2.2",
-    "yarn-upgrade-all": "^0.5.4"
+    "lerna": "^8.1.2",
+    "typescript": "^5.4.5",
+    "yarn-upgrade-all": "^0.7.2"
   }
 }
