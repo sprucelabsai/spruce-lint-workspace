@@ -1,6 +1,6 @@
 /** @deprecated - use anything else */
 function returnTrue() {
-	return true
+    return true
 }
 
 returnTrue()

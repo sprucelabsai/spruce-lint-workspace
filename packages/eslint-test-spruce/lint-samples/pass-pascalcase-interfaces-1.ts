@@ -1,3 +1,3 @@
 export interface MercuryResponse {
-	payload: string
+    payload: string
 }

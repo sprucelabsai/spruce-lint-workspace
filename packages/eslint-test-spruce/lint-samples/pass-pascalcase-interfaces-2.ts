@@ -1,3 +1,3 @@
 export interface IMercuryResponse {
-	payload: string
+    payload: string
 }
