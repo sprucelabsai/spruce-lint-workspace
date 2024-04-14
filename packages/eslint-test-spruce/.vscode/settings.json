@@ -8,4 +8,8 @@
         "typescriptreact"
     ],
     "typescript.validate.enable": false,
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    }
 }

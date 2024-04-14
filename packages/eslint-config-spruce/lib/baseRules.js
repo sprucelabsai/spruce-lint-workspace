@@ -15,8 +15,9 @@ export default {
 		{
 			trailingComma: "es5",
 			singleQuote: true,
-			useTabs: true,
-			semi: false
+			useTabs: false,
+			semi: false,
+			tabWidth: 4,
 		}
 	],
 	'import/order': ['error', {
