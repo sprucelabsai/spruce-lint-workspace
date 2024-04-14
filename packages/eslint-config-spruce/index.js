@@ -1,12 +1,10 @@
-import typescriptRules from './lib/typescriptRules.js'
-import eslint from '@eslint/js'
+import typescriptRules from './support/typescriptRules.js'
 import tseslint from 'typescript-eslint'
-import prettierConfig from 'eslint-config-prettier'
 import prettierRecommended from 'eslint-plugin-prettier/recommended'
 import prettierPlugin from 'eslint-plugin-prettier'
-import baseRules from './lib/baseRules.js'
+import baseRules from './support/baseRules.js'
 import spruce from 'eslint-plugin-spruce'
-import spruceRules from './lib/spruceRules.js'
+import spruceRules from './support/spruceRules.js'
 // import deprecation from 'eslint-plugin-deprecation'
 import importPlugin from 'eslint-plugin-import'
 import globals from 'globals'
@@ -76,7 +74,7 @@ export function buildEsLintConfig(overrides = {}) {
 		{ name: 'prettier-recommended', ...prettierRecommended },
 		{
 			name: 'spruce-overrides',
-			ignores: ["build/**"],
+			ignores: ["build/**", "esm/**"],
 			plugins: {
 				spruce,
 				typescript: tseslint.plugin,
@@ -124,7 +122,7 @@ export function buildEsLintConfig(overrides = {}) {
 			}
 		},
 	]
-	
+
 }
 
 export default buildEsLintConfig()
