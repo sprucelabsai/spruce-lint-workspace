@@ -4,7 +4,7 @@ orbs:
 jobs:
   test:
     docker:
-      - image: cimg/node:20.7
+      - image: cimg/node:21.7
     steps:
       - add_ssh_keys:
           fingerprints:
