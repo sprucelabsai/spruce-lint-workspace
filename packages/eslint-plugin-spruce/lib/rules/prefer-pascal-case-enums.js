@@ -1,7 +1,7 @@
 // From https://github.com/Shopify/eslint-plugin-shopify/blob/master/lib/rules/typescript/prefer-pascal-case-enums.js
-const { pascalCase } = require('pascal-case')
+import { pascalCase } from 'pascal-case'
 
-module.exports = {
+export default {
 	meta: {
 		docs: {
 			description: 'Enforce Pascal case when naming enums.',
@@ -18,7 +18,7 @@ module.exports = {
 				node,
 				message: `Enum '{{name}}' should use Pascal case.`,
 				data: { name },
-				fix: function(fixer) {
+				fix: function (fixer) {
 					return fixer.replaceText(node, pascalCase(name));
 				}
 			})

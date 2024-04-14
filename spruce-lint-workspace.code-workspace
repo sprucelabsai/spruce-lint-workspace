@@ -7,6 +7,10 @@
     {
       "path": "packages/eslint-plugin-spruce",
       "name": "Spruce ESLint Plugin"
+    },
+    {
+      "path": "packages/eslint-test-spruce",
+      "name": "Spruce ESLint Test"
     }
   ]
 }

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	meta: {
 		docs: {
 			description: 'Prohibit imports of dateUtils in vcs',

@@ -9,6 +9,7 @@
 	"homepage": "https://github.com/sprucelabsai/workspace.sprucebot-skills-kit#readme",
 	"license": "MIT",
 	"main": "index.js",
+	"type": "module",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/sprucelabsai/workspace.sprucebot-skills-kit.git"

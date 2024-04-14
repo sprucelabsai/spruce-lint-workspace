@@ -1,6 +1,6 @@
 // From https://github.com/Shopify/eslint-plugin-shopify/blob/master/lib/rules/typescript/prefer-pascal-case-enums.js
 
-module.exports = {
+export default {
 	meta: {
 		docs: {
 			description: 'Import spruce paths using a hash #',
