@@ -18,6 +18,7 @@ const config = [
 	{ name: 'prettier-recommended', ...prettierRecommended },
 	{
 		name: 'spruce-overrides',
+		ignores: ["build/**"],
 		plugins: {
 			spruce,
 			typescript: tseslint.plugin,
