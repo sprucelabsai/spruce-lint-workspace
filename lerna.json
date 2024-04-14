@@ -1,7 +1,7 @@
 {
   "lerna": "2.9.0",
   "npmClient": "yarn",
-  "version": "11.1.0",
+  "version": "11.1.1",
   "command": {
     "publish": {
       "allowBranch": [
