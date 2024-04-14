@@ -24,17 +24,44 @@ export default {
 	'@typescript-eslint/naming-convention': [
 		'error',
 		{
+			// Apply camelCase for all variables by default
+			'selector': 'variable',
 			'format': ['camelCase'],
-			'selector': 'variable'
+			'leadingUnderscore': 'allow',
+			'trailingUnderscore': 'allow',
 		},
 		{
-			selector: 'typeLike',
-			format: ['PascalCase'],
+			// Enforce UPPER_CASE for top-level constants
+			'selector': 'variable',
+			'modifiers': ['const'],
+			'format': ['UPPER_CASE'],
+			'leadingUnderscore': 'allow',
+			'trailingUnderscore': 'allow',
+			'filter': {
+				'regex': '^[A-Z0-9_]+$',
+				'match': true
+			}
 		},
 		{
-			format: ['PascalCase'],
-			selector: 'enumMember'
-		}
+			// Allow camelCase for non top-level constants, i.e., those declared within functions
+			'selector': 'variable',
+			'modifiers': ['const'],
+			'format': ['camelCase'],
+			'leadingUnderscore': 'allow',
+			'trailingUnderscore': 'allow',
+			'filter': {
+				'regex': '^[a-z].*',
+				'match': true
+			}
+		},
+		{
+			'selector': 'typeLike',
+			'format': ['PascalCase'],
+		},
+		{
+			'selector': 'enumMember',
+			'format': ['PascalCase'],
+		},
 	],
 	'@typescript-eslint/no-floating-promises': process.env.CI === 'true' ? 'error' : 'off',
 	'@typescript-eslint/no-unused-vars': ['error', { 'argsIgnorePattern': '^_' }],
