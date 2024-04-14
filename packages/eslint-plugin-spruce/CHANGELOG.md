@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.0.0](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/compare/v10.13.6...v11.0.0) (2024-04-14)
+
+
+### Breaking Changes
+
+* eslint 9 and flat config migration ([64de5a6](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/commit/64de5a6))
+* upgrade ([184091f](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/commit/184091f))
+
+
+
+
+
 ## [10.13.6](https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/compare/v10.13.5...v10.13.6) (2023-08-29)
 
 **Note:** Version bump only for package eslint-plugin-spruce
