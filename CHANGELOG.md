@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v11.0.1...v11.1.0) (2024-04-14)
+
+
+### Features
+
+* export builder function to allow for overrides ([e2ce997](https://github.com/sprucelabsai/spruce-lint-workspace/commit/e2ce997))
+
+
+
+
+
 ## [11.0.1](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v11.0.0...v11.0.1) (2024-04-14)
 
 **Note:** Version bump only for package spruce-lint-workspace
