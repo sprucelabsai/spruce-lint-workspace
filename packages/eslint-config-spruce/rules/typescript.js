@@ -1,7 +1,15 @@
 // from '@typescript-eslint/eslint-plugin/dist/configs/recommended.js'
 export default {
 	'@typescript-eslint/ban-ts-comment': 'error',
-	'@typescript-eslint/ban-types': 'error',
+	"@typescript-eslint/ban-types": [
+		"error",
+		{
+			"types": {
+				"{}": false,
+			},
+			"extendDefaults": true,
+		},
+	],
 	'@typescript-eslint/no-array-constructor': 'error',
 	'@typescript-eslint/no-duplicate-enum-values': 'error',
 	'@typescript-eslint/no-explicit-any': 'error',
@@ -25,7 +33,7 @@ export default {
 		{
 			// Apply camelCase for all variables by default
 			'selector': 'variable',
-			'format': ['camelCase'],
+			'format': ['camelCase', 'PascalCase'],
 			'leadingUnderscore': 'allow',
 			'trailingUnderscore': 'allow',
 		},

@@ -26,7 +26,7 @@ export default {
 			'order': 'asc',
 			'caseInsensitive': true
 		},
-		'newlines-between': 'never',
+		'newlines-between': 'ignore',
 		'groups': ['builtin', 'external', 'internal', 'parent', 'index', 'sibling', 'unknown'],
 		'pathGroups': [
 			{
