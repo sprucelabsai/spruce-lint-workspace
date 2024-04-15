@@ -9,6 +9,14 @@ import importPlugin from 'eslint-plugin-import'
 import globals from 'globals'
 import deprecationPlugin from './plugins/deprecation.js'
 
+function sanitizeGlobals(globs) {
+    const sanitized = {};
+    Object.keys(globs).forEach(key => {
+        sanitized[key.trim()] = globs[key];
+    });
+    return sanitized;
+}
+
 /**
  * @typedef {Object} RuleEntry
  * Rule configuration which can either be a severity level or a severity with options array.
@@ -97,8 +105,8 @@ export function buildEsLintConfig(overrides = {}) {
 					project: './tsconfig.json'
 				},
 				globals: {
-					...globals.node,
-					...globals.browser,
+					...sanitizeGlobals(globals.node),
+					...sanitizeGlobals(globals.browser),
 				}
 			},
 			...overrides,
