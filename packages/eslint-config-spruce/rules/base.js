@@ -9,6 +9,7 @@ export default {
 	'no-loss-of-precision': 'off',
 	'no-array-constructor': 'off',
 	'object-shorthand': ['error', 'always'],
+	'prefer-const': 'off',
 	'prettier/prettier': [
 		'error',
 		{
