@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.2.0](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v11.1.2...v11.2.0) (2024-04-15)
+
+
+### Features
+
+* deprecation warnings and global ignore mixins ([53464c2](https://github.com/sprucelabsai/spruce-lint-workspace/commit/53464c2))
+
+
+
+
+
 ## [11.1.2](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v11.1.1...v11.1.2) (2024-04-14)
 
 **Note:** Version bump only for package spruce-lint-workspace
