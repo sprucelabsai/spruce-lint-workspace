@@ -124,8 +124,8 @@ export function buildEsLintConfig(overrides = {}) {
 
 	const mixedConfig = config.map(config => ({
 		...config,
-		files: config.files ?? ['src/**/*.ts', 'src/**/*.tsx', 'src/**/*.mts', 'src/**/*.cts'],
-		ignores: overrides.ignores ?? config.ignores ?? [],
+		files: config.files ?? ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
+		ignores: overrides.ignores ?? config.ignores ?? ['build/**', 'esm/**', 'node_modules/**'],
 	}))
 
 	return mixedConfig
