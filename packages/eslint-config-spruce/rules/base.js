@@ -6,7 +6,6 @@ export default {
 	'no-var': 'error',
 	'no-unreachable': 'error',
 	'no-unused-vars': 'off',
-	// "deprecation/deprecation": 'warn',
 	'no-loss-of-precision': 'off',
 	'no-array-constructor': 'off',
 	'object-shorthand': ['error', 'always'],
@@ -20,6 +19,7 @@ export default {
 			tabWidth: 4,
 		}
 	],
+	'deprecation/no-deprecated': 'warn',
 	'import/order': ['error', {
 		'alphabetize': {
 			'order': 'asc',

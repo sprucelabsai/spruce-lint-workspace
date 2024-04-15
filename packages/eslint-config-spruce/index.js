@@ -5,9 +5,9 @@ import prettierPlugin from 'eslint-plugin-prettier'
 import baseRules from './rules/base.js'
 import spruce from 'eslint-plugin-spruce'
 import spruceRules from './rules/spruce.js'
-// import deprecation from 'eslint-plugin-deprecation'
 import importPlugin from 'eslint-plugin-import'
 import globals from 'globals'
+import deprecationPlugin from './plugins/deprecation.js'
 
 /**
  * @typedef {Object} RuleEntry
@@ -67,18 +67,17 @@ import globals from 'globals'
  * @returns {Config[]} An array of ESLint configuration objects.
  */
 export function buildEsLintConfig(overrides = {}) {
-	return [
+	const config = [
 		...tseslint.config(
 			...tseslint.configs.stylistic,
 		),
 		{ name: 'prettier-recommended', ...prettierRecommended },
 		{
 			name: 'spruce-overrides',
-			ignores: ["build/**", "esm/**"],
 			plugins: {
 				spruce,
 				typescript: tseslint.plugin,
-				// deprecation,
+				deprecation: deprecationPlugin,
 				prettier: prettierPlugin,
 				import: importPlugin
 			},
@@ -122,6 +121,14 @@ export function buildEsLintConfig(overrides = {}) {
 			}
 		},
 	]
+
+	const mixedConfig = config.map(config => ({
+		...config,
+		files: config.files ?? ['src/**/*.ts', 'src/**/*.tsx', 'src/**/*.mts', 'src/**/*.cts'],
+		ignores: overrides.ignores ?? config.ignores ?? [],
+	}))
+
+	return mixedConfig
 
 }
 

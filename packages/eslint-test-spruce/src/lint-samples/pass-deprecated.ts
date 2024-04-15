@@ -4,3 +4,9 @@ function returnTrue() {
 }
 
 returnTrue()
+
+function notDeprecated() {
+    return false
+}
+
+notDeprecated()
