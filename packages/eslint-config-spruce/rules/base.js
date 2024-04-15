@@ -2,7 +2,7 @@ export default {
 	curly: 'error',
 	'no-async-promise-executor': 'off',
 	'no-console': 'off',
-	'no-undef': 'error',
+	'no-undef': 'off',
 	'no-var': 'error',
 	'no-unreachable': 'error',
 	'no-unused-vars': 'off',

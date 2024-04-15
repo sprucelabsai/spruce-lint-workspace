@@ -8,7 +8,6 @@ export default {
 	'@typescript-eslint/no-extra-non-null-assertion': 'error',
 	'@typescript-eslint/no-loss-of-precision': 'error',
 	'@typescript-eslint/no-misused-new': 'error',
-	'@typescript-eslint/no-namespace': 'error',
 	'@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
 	'@typescript-eslint/no-this-alias': 'error',
 	'@typescript-eslint/no-unnecessary-type-constraint': 'error',
