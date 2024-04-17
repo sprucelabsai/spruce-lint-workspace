@@ -19,7 +19,7 @@
 		"url": "https://github.com/sprucelabsai/workspace.sprucebot-skills-kit/issues"
 	},
 	"dependencies": {
-		"pascal-case": "^4.0.0"
+		"change-case": "^5.4.4"
 	},
 	"gitHead": "e47e7dec9c49309ac433bc8fb5d70a718c5fc741"
 }
