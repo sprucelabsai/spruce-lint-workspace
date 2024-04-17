@@ -70,7 +70,6 @@ export default {
 			'format': ['PascalCase'],
 		},
 	],
-	'@typescript-eslint/no-floating-promises': process.env.CI === 'true' ? 'error' : 'off',
 	'@typescript-eslint/no-unused-vars': ['error', { 'argsIgnorePattern': '^_' }],
 	'@typescript-eslint/no-empty-interface': 0,
 	'@typescript-eslint/ban-ts-ignore': 0,
