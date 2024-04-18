@@ -1,6 +1,5 @@
 // from '@typescript-eslint/eslint-plugin/dist/configs/recommended.js'
 export default {
-	'@typescript-eslint/ban-ts-comment': 'error',
 	"@typescript-eslint/ban-types": [
 		"error",
 		{
