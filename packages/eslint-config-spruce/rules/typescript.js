@@ -62,7 +62,7 @@ export default {
 		},
 		{
 			'selector': 'typeLike',
-			'format': ['PascalCase'],
+			'format': ['PascalCase','UPPER_CASE'],
 		},
 		{
 			'selector': 'enumMember',
