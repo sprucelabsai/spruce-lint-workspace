@@ -39,7 +39,6 @@ export default {
 		{
 			// Enforce UPPER_CASE for top-level constants
 			'selector': 'variable',
-			'modifiers': ['const'],
 			'format': ['UPPER_CASE'],
 			'leadingUnderscore': 'allow',
 			'trailingUnderscore': 'allow',
@@ -62,7 +61,7 @@ export default {
 		},
 		{
 			'selector': 'typeLike',
-			'format': ['PascalCase','UPPER_CASE'],
+			'format': ['PascalCase', 'UPPER_CASE'],
 		},
 		{
 			'selector': 'enumMember',
