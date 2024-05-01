@@ -3,7 +3,7 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"version": "11.2.14",
+	"version": "11.2.15",
 	"description": "ESLint configuration for Spruce Javascript projects",
 	"author": "Taylor Romero taylor@sprucelabs.ai",
 	"license": "MIT",
@@ -15,7 +15,7 @@
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-import": "^2.29.1",
 		"eslint-plugin-prettier": "^5.1.3",
-		"eslint-plugin-spruce": "^11.2.14",
+		"eslint-plugin-spruce": "^11.2.15",
 		"typescript-eslint": "^7.6.0"
 	},
 	"gitHead": "e47e7dec9c49309ac433bc8fb5d70a718c5fc741"
