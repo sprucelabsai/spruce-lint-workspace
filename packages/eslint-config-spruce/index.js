@@ -8,6 +8,7 @@ import spruceRules from './rules/spruce.js'
 import importPlugin from 'eslint-plugin-import'
 import globals from 'globals'
 import deprecationPlugin from './plugins/deprecation.js'
+import path from 'path'
 
 function sanitizeGlobals(globs) {
     const sanitized = {};
@@ -102,7 +103,7 @@ export function buildEsLintConfig(overrides = {}) {
 					ecmaFeatures: {
 						jsx: true
 					},
-					project: './tsconfig.json'
+					project:path.join(process.cwd(),'tsconfig.json')
 				},
 				globals: {
 					...sanitizeGlobals(globals.node),
