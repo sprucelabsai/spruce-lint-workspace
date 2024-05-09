@@ -49,11 +49,10 @@ jobs:
       - checkout
       - spruce/check_and_skip_if_npm_publish
       - spruce/install_rsync
-      - spruce/install_deps_build_dist_release
-      # - run:
-      #     name: Authenticate with registry
-      #     command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-      # - run: 'npm run publish -- --yes --force-publish --dist-tag latest --message "chore(release): %v [npm-publish]"'
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+      - run: 'npm run publish -- --yes --force-publish --dist-tag latest --message "chore(release): %v [npm-publish]"'
   upgrade:
     docker:
       - image: cimg/node:lts
