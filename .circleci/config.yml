@@ -4,7 +4,7 @@ orbs:
 jobs:
   test:
     docker:
-      - image: cimg/node:21.7
+      - image: cimg/node:lts
     steps:
       - add_ssh_keys:
           fingerprints:
@@ -41,7 +41,7 @@ jobs:
             git push origin
   npm_publish:
     docker:
-      - image: cimg/node:21.7
+      - image: cimg/node:lts
     steps:
       - add_ssh_keys:
           fingerprints:
@@ -56,7 +56,7 @@ jobs:
       # - run: 'npm run publish -- --yes --force-publish --dist-tag latest --message "chore(release): %v [npm-publish]"'
   upgrade:
     docker:
-      - image: cimg/node:21.7
+      - image: cimg/node:lts
     steps:
       - spruce/check_for_autoupgrade_dns
       - add_ssh_keys:
@@ -79,6 +79,10 @@ jobs:
               echo "No modifications detected.  No push/PR necessary 👊"
               circleci-agent step halt
             fi
+      - run:
+          name: "ensure ssh folder"
+          command: |
+            mkdir -p ~/.ssh
       - spruce/create_pr
 workflows:
   version: 2.1
