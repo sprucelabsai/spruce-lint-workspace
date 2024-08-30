@@ -1,12 +1,9 @@
 // from '@typescript-eslint/eslint-plugin/dist/configs/recommended.js'
 export default {
-	"@typescript-eslint/ban-types": [
+	"@typescript-eslint/no-empty-object-type": [
 		"error",
 		{
-			"types": {
-				"{}": false,
-			},
-			"extendDefaults": true,
+			"allowObjectTypes": "always",
 		},
 	],
 	'@typescript-eslint/no-array-constructor': 'error',
