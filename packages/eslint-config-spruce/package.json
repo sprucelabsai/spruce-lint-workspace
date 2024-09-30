@@ -16,7 +16,7 @@
 		"eslint-plugin-import": "^2.30.0",
 		"eslint-plugin-prettier": "^5.2.1",
 		"eslint-plugin-spruce": "^11.2.26",
-		"typescript-eslint": "^8.7.0"
+		"typescript-eslint": "^8.8.0"
 	},
 	"gitHead": "e47e7dec9c49309ac433bc8fb5d70a718c5fc741"
 }
