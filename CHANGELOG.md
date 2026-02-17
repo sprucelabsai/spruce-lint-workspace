@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.2.27](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v11.2.26...v11.2.27) (2026-02-17)
+
+
+### Bug Fixes
+
+* add globals as explicit dependency in eslint-config-spruce ([1ae2713](https://github.com/sprucelabsai/spruce-lint-workspace/commit/1ae2713))
+
+
+
+
+
 ## [11.2.26](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v11.2.25...v11.2.26) (2024-06-24)
 
 **Note:** Version bump only for package spruce-lint-workspace
