@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.2.28](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v11.2.27...v11.2.28) (2026-02-17)
+
+
+### Bug Fixes
+
+* batch pass-* lint tests into single eslint call for faster CI ([d584433](https://github.com/sprucelabsai/spruce-lint-workspace/commit/d584433))
+
+
+
+
+
 ## [11.2.27](https://github.com/sprucelabsai/spruce-lint-workspace/compare/v11.2.26...v11.2.27) (2026-02-17)
 
 
