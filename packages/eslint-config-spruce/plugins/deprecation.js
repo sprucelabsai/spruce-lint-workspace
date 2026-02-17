@@ -14,7 +14,7 @@ export const deprecation = {
         return {
             // When any node is found
             '*': function (node) {
-                const sourceCode = context.getSourceCode();
+                const sourceCode = context.sourceCode;
                 const commentsBefore = sourceCode.getCommentsBefore(node);
 
                 // Check if any preceding comment has the @deprecated tag

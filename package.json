@@ -23,7 +23,7 @@
     "lint": "lerna run lint",
     "publish": "lerna publish",
     "rebuild": "yarn clean.all && yarn && yarn build.dev",
-    "test": "lerna run test --parallel",
+    "test": "node test-changelog-preset.cjs && lerna run test --parallel",
     "update.dependencies": "yarn clean.dependencies && yarn",
     "upgrade.packages": "yarn upgrade --latest && rm -f yarn.lock && yarn ; yarn fix.lint ; true",
     "upgrade.packages.workspaces": "yarn && for d in packages/*; do cd $d; yarn-upgrade-all; cd ../..; done",
