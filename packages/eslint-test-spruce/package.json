@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "test.fail": "cd src/lint-samples/; for d in fail-*; do echo \" \n \nTrying $d\nExpecting errors\" ; eslint $d; if [ $? -ne 1 ]; then echo FAILED: $d; exit 1; fi; echo \"👍\n \"; done",
-    "test.pass": "cd src/lint-samples/; for d in pass-*; do echo \" \n \nTrying $d\nExpecting success\"; eslint $d; if [ $? -ne 0 ]; then echo FAILED: $d; exit 1; fi; echo \"👍\n \"; done",
+    "test.pass": "cd src/lint-samples/ && echo 'Trying all pass-* files' && eslint pass-* && echo '👍 All pass tests passed'",
     "test": "yarn test.fail && yarn test.pass"
   },
   "devDependencies": {
