@@ -1,11 +1,6 @@
 // from '@typescript-eslint/eslint-plugin/dist/configs/recommended.js'
 export default {
-	"@typescript-eslint/no-empty-object-type": [
-		"error",
-		{
-			"allowObjectTypes": "always",
-		},
-	],
+	"@typescript-eslint/no-empty-object-type": "off",
 	'@typescript-eslint/no-array-constructor': 'error',
 	'@typescript-eslint/no-duplicate-enum-values': 'error',
 	'@typescript-eslint/no-explicit-any': 'error',
