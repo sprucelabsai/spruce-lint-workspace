@@ -19,6 +19,6 @@
     "resolve-from": "^5.0.0"
   },
   "dependencies": {
-    "eslint-config-spruce": "^11.2.36"
+    "eslint-config-spruce": "^11.2.35"
   }
 }
